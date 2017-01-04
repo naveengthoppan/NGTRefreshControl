@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '9.0'
+s.ios.deployment_target = '10.1'
 s.name = "NGTProgressView"
 s.summary = "NGTProgressView is an animating view that can be used as a progress view in refresh controls or other progress views."
 s.requires_arc = true
@@ -38,7 +38,7 @@ s.source = { :git => "https://github.com/naveengthoppan/NGTRefreshControl.git", 
 s.framework = "UIKit"
 
 # 8
-s.source_files = "NGTProgressView/**/**/*.{swift}"
+s.source_files = "NGTProgressView/**/*.{swift}"
 
 # 9
 s.resources = "NGTProgressView/**/**/*.{png,jpeg,jpg,storyboard,xib}"
