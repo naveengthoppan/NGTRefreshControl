@@ -8,7 +8,7 @@
 
 import UIKit
  @IBDesignable
-class NGTProgressView: UIView {
+public class NGTProgressView: UIView {
         
     @IBOutlet weak var view: UIView!
     @IBOutlet weak var cityImageView: UIImageView!
