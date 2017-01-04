@@ -38,8 +38,8 @@ s.source = { :git => "https://github.com/naveengthoppan/NGTRefreshControl.git", 
 s.framework = "UIKit"
 
 # 8
-s.source_files = "NGTProgressView/**/*.{swift}"
+s.source_files = "NGTProgressView/**/**/*.{swift}"
 
 # 9
-s.resources = "NGTProgressView/**/*.{png,jpeg,jpg,storyboard,xib}"
+s.resources = "NGTProgressView/**/**/*.{png,jpeg,jpg,storyboard,xib}"
 end
