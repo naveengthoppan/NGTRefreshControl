@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FEEFF48B1E1B90B2006C16F5"
-               BuildableName = "NGTProgressView.framework"
-               BlueprintName = "NGTProgressView"
-               ReferencedContainer = "container:NGTProgressView.xcodeproj">
+               BlueprintIdentifier = "4572A298068DBAA54BB4422D9CCE7733"
+               BuildableName = "Pods_NGTProgressView.framework"
+               BlueprintName = "Pods-NGTProgressView"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FEEFF48B1E1B90B2006C16F5"
-            BuildableName = "NGTProgressView.framework"
-            BlueprintName = "NGTProgressView"
-            ReferencedContainer = "container:NGTProgressView.xcodeproj">
+            BlueprintIdentifier = "4572A298068DBAA54BB4422D9CCE7733"
+            BuildableName = "Pods_NGTProgressView.framework"
+            BlueprintName = "Pods-NGTProgressView"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FEEFF48B1E1B90B2006C16F5"
-            BuildableName = "NGTProgressView.framework"
-            BlueprintName = "NGTProgressView"
-            ReferencedContainer = "container:NGTProgressView.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

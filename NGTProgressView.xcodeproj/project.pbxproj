@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3D411813853A7A77027702A /* Pods_NGTProgressView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9904F8BDA235BE79AAF34B2 /* Pods_NGTProgressView.framework */; };
 		FEEFF4911E1B90B2006C16F5 /* NGTProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = FEEFF48F1E1B90B2006C16F5 /* NGTProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEEFF49A1E1B9A93006C16F5 /* NGTCityRefreshControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEEFF4991E1B9A93006C16F5 /* NGTCityRefreshControl.xib */; };
+		FEEFF49C1E1B9AA2006C16F5 /* NGTCityRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEFF49B1E1B9AA2006C16F5 /* NGTCityRefreshControl.swift */; };
+		FEEFF49F1E1B9B58006C16F5 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEFF49E1E1B9B58006C16F5 /* car.png */; };
+		FEEFF4A11E1B9B69006C16F5 /* city.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEFF4A01E1B9B69006C16F5 /* city.png */; };
+		FEEFF4A31E1B9B71006C16F5 /* signboard.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEFF4A21E1B9B71006C16F5 /* signboard.png */; };
+		FEEFF4A51E1B9B7A006C16F5 /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEFF4A41E1B9B7A006C16F5 /* sun.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E2D7E87FC1A211AE402B3A3 /* Pods-NGTProgressView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGTProgressView.release.xcconfig"; path = "Pods/Target Support Files/Pods-NGTProgressView/Pods-NGTProgressView.release.xcconfig"; sourceTree = "<group>"; };
+		C9904F8BDA235BE79AAF34B2 /* Pods_NGTProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NGTProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4CA0F53BB2B748BD07BDFA /* Pods-NGTProgressView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGTProgressView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NGTProgressView/Pods-NGTProgressView.debug.xcconfig"; sourceTree = "<group>"; };
 		FEEFF48C1E1B90B2006C16F5 /* NGTProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NGTProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEEFF48F1E1B90B2006C16F5 /* NGTProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGTProgressView.h; sourceTree = "<group>"; };
 		FEEFF4901E1B90B2006C16F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEEFF4991E1B9A93006C16F5 /* NGTCityRefreshControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NGTCityRefreshControl.xib; sourceTree = "<group>"; };
+		FEEFF49B1E1B9AA2006C16F5 /* NGTCityRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NGTCityRefreshControl.swift; sourceTree = "<group>"; };
+		FEEFF49E1E1B9B58006C16F5 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		FEEFF4A01E1B9B69006C16F5 /* city.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city.png; sourceTree = "<group>"; };
+		FEEFF4A21E1B9B71006C16F5 /* signboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signboard.png; sourceTree = "<group>"; };
+		FEEFF4A41E1B9B7A006C16F5 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D411813853A7A77027702A /* Pods_NGTProgressView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6EB6D3B6DB48E20E418C3B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE4CA0F53BB2B748BD07BDFA /* Pods-NGTProgressView.debug.xcconfig */,
+				2E2D7E87FC1A211AE402B3A3 /* Pods-NGTProgressView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8E10C21267EEB72D58CF860 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9904F8BDA235BE79AAF34B2 /* Pods_NGTProgressView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FEEFF4821E1B90B2006C16F5 = {
 			isa = PBXGroup;
 			children = (
 				FEEFF48E1E1B90B2006C16F5 /* NGTProgressView */,
 				FEEFF48D1E1B90B2006C16F5 /* Products */,
+				B6EB6D3B6DB48E20E418C3B0 /* Pods */,
+				C8E10C21267EEB72D58CF860 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +82,40 @@
 		FEEFF48E1E1B90B2006C16F5 /* NGTProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				FEEFF49D1E1B9B27006C16F5 /* Resources */,
+				FEEFF4981E1B9A5C006C16F5 /* Controllers */,
+				FEEFF4971E1B9A55006C16F5 /* Views */,
 				FEEFF48F1E1B90B2006C16F5 /* NGTProgressView.h */,
 				FEEFF4901E1B90B2006C16F5 /* Info.plist */,
 			);
 			path = NGTProgressView;
+			sourceTree = "<group>";
+		};
+		FEEFF4971E1B9A55006C16F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEEFF4991E1B9A93006C16F5 /* NGTCityRefreshControl.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FEEFF4981E1B9A5C006C16F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FEEFF49B1E1B9AA2006C16F5 /* NGTCityRefreshControl.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FEEFF49D1E1B9B27006C16F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEEFF49E1E1B9B58006C16F5 /* car.png */,
+				FEEFF4A01E1B9B69006C16F5 /* city.png */,
+				FEEFF4A21E1B9B71006C16F5 /* signboard.png */,
+				FEEFF4A41E1B9B7A006C16F5 /* sun.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEEFF4941E1B90B2006C16F5 /* Build configuration list for PBXNativeTarget "NGTProgressView" */;
 			buildPhases = (
+				2B1675B27C91F9C46624890F /* [CP] Check Pods Manifest.lock */,
 				FEEFF4871E1B90B2006C16F5 /* Sources */,
 				FEEFF4881E1B90B2006C16F5 /* Frameworks */,
 				FEEFF4891E1B90B2006C16F5 /* Headers */,
 				FEEFF48A1E1B90B2006C16F5 /* Resources */,
+				08CF3B425B9C6244F024EE0B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -95,6 +163,7 @@
 				TargetAttributes = {
 					FEEFF48B1E1B90B2006C16F5 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,16 +190,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEFF49F1E1B9B58006C16F5 /* car.png in Resources */,
+				FEEFF4A31E1B9B71006C16F5 /* signboard.png in Resources */,
+				FEEFF4A51E1B9B7A006C16F5 /* sun.png in Resources */,
+				FEEFF49A1E1B9A93006C16F5 /* NGTCityRefreshControl.xib in Resources */,
+				FEEFF4A11E1B9B69006C16F5 /* city.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08CF3B425B9C6244F024EE0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NGTProgressView/Pods-NGTProgressView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B1675B27C91F9C46624890F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FEEFF4871E1B90B2006C16F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEFF49C1E1B9AA2006C16F5 /* NGTCityRefreshControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +346,9 @@
 		};
 		FEEFF4951E1B90B2006C16F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE4CA0F53BB2B748BD07BDFA /* Pods-NGTProgressView.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -250,13 +360,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoppan.NGTProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		FEEFF4961E1B90B2006C16F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E2D7E87FC1A211AE402B3A3 /* Pods-NGTProgressView.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -291,6 +404,7 @@
 				FEEFF4961E1B90B2006C16F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
