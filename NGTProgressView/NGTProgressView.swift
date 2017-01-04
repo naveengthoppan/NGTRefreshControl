@@ -1,5 +1,5 @@
 //
-//  NGTCityRefreshControl.swift
+//  NGTProgressView.swift
 //  PullRefresh
 //
 //  Created by Naveen George Thoppan on 28/12/16.
@@ -8,7 +8,7 @@
 
 import UIKit
  @IBDesignable
-class NGTCityRefreshControl: UIView {
+class NGTProgressView: UIView {
         
     @IBOutlet weak var view: UIView!
     @IBOutlet weak var cityImageView: UIImageView!

@@ -4,11 +4,11 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '9.0'
 s.name = "NGTProgressView"
-s.summary = "NGTProgressView gives an animating progress view that can be used as subview in refresh cotrol or to any other views to indicate progress."
+s.summary = "NGTProgressView is an animating view that can be used as a progress view in refresh controls or other progress views."
 s.requires_arc = true
 
 # 2
-s.version = "0.1.0"
+s.version = "0.1.1"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
