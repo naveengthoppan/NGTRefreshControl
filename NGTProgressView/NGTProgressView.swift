@@ -7,45 +7,47 @@
 //
 
 import UIKit
- @IBDesignable
+@IBDesignable
 public class NGTProgressView: UIView {
-        
+    
     @IBOutlet weak var view: UIView!
     @IBOutlet weak var cityImageView: UIImageView!
     @IBOutlet weak var sunImageView: UIImageView!
     @IBOutlet weak var signBoardImageView: UIImageView!
     @IBOutlet weak var carImageView: UIImageView!
+    @IBOutlet weak var carLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var cityLeadingConstriant: NSLayoutConstraint!
     
     var isCompleted: Bool!
+    
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        nibSetup()
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        nibSetup()
+    }
+    
+    private func nibSetup() {
+        backgroundColor = .clear
         
-        override public init(frame: CGRect) {
-            super.init(frame: frame)
-            nibSetup()
-        }
+        view = loadViewFromNib()
+        view.frame = bounds
+        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.translatesAutoresizingMaskIntoConstraints = true
         
-        required public init?(coder aDecoder: NSCoder) {
-            super.init(coder: aDecoder)
-            nibSetup()
-        }
+        addSubview(view)
+    }
+    
+    private func loadViewFromNib() -> UIView {
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
+        let nibView = nib.instantiate(withOwner: self, options: nil).first as! UIView
         
-        private func nibSetup() {
-            backgroundColor = .clear
-            
-            view = loadViewFromNib()
-            view.frame = bounds
-            view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            view.translatesAutoresizingMaskIntoConstraints = true
-            
-            addSubview(view)
-        }
-        
-        private func loadViewFromNib() -> UIView {
-            let bundle = Bundle(for: type(of: self))
-            let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
-            let nibView = nib.instantiate(withOwner: self, options: nil).first as! UIView
-            
-            return nibView
-        }
+        return nibView
+    }
     
     public func startAnimation(completion: @escaping (_ isCompleted: Bool)->()) {
         isCompleted = false
@@ -58,10 +60,10 @@ public class NGTProgressView: UIView {
     }
     
     public func animateRefreshStep2(completion: @escaping (_ isCompleted: Bool)->()) {
-        
+        self.carLeadingConstraint.constant = self.view.bounds.width/2 - 30
+        self.cityLeadingConstriant.constant -= 15
         UIView.animate(withDuration: 4, animations: {
-            self.carImageView.center.x = self.view.bounds.width/2
-            self.cityImageView.center.x -= 15
+            self.view.layoutIfNeeded()
             self.startCarShakeAnimation()
         }) { finished in
             completion(true)
@@ -69,17 +71,21 @@ public class NGTProgressView: UIView {
     }
     
     public func stopAnimation (completion: @escaping (_ isCompleted: Bool)->()) {
-            if (self.isCompleted == false) {
-                UIView.animate(withDuration: 2, delay:0.8, animations: {
-                    self.carImageView.center.x = self.view.bounds.width+60
-                    self.cityImageView.center.x -= 15
-                    
-                }) { finished in
-                    self.isCompleted = true
-                    self.stopCarShakeAnimation()
-                    completion(self.isCompleted)
-                }
+        if (self.isCompleted == false) {
+            self.carLeadingConstraint.constant = self.view.bounds.width + 30
+            self.cityLeadingConstriant.constant -= 15
+            UIView.animate(withDuration: 2, delay:0.8, animations: {
+                self.view.layoutIfNeeded()
+                
+                
+            }) { finished in
+                self.isCompleted = true
+                self.stopCarShakeAnimation()
+                completion(self.isCompleted)
+                self.carLeadingConstraint.constant = -90
+                self.cityLeadingConstriant.constant = -37
             }
+        }
     }
     private func rotateView(targetView: UIView, duration: Double = 2) {
         UIView.animate(withDuration: duration, delay: 0.0, options: [.repeat, .curveLinear], animations: {
@@ -87,7 +93,7 @@ public class NGTProgressView: UIView {
         })
     }
     
-    func startCarShakeAnimation () {
+    public func startCarShakeAnimation () {
         let carShakeAnimation = CABasicAnimation(keyPath: "transform.rotation")
         carShakeAnimation.duration = 0.1
         carShakeAnimation.beginTime = CACurrentMediaTime() + 1
@@ -99,7 +105,7 @@ public class NGTProgressView: UIView {
         
     }
     
-    func stopCarShakeAnimation () {
+    public func stopCarShakeAnimation () {
         self.carImageView.layer.removeAnimation(forKey: "carAnimation")
     }
 }
