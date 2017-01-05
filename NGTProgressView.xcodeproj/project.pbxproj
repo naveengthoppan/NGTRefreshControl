@@ -10,7 +10,7 @@
 		C3D411813853A7A77027702A /* Pods_NGTProgressView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9904F8BDA235BE79AAF34B2 /* Pods_NGTProgressView.framework */; };
 		FEDD42DF1E1CD26B00BB780F /* NGTProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDD42DE1E1CD26B00BB780F /* NGTProgressView.swift */; };
 		FEEFF4911E1B90B2006C16F5 /* NGTProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = FEEFF48F1E1B90B2006C16F5 /* NGTProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEEFF49A1E1B9A93006C16F5 /* NGTCityRefreshControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEEFF4991E1B9A93006C16F5 /* NGTCityRefreshControl.xib */; };
+		FEEFF49A1E1B9A93006C16F5 /* NGTProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEEFF4991E1B9A93006C16F5 /* NGTProgressView.xib */; };
 		FEEFF49F1E1B9B58006C16F5 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEFF49E1E1B9B58006C16F5 /* car.png */; };
 		FEEFF4A11E1B9B69006C16F5 /* city.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEFF4A01E1B9B69006C16F5 /* city.png */; };
 		FEEFF4A31E1B9B71006C16F5 /* signboard.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEFF4A21E1B9B71006C16F5 /* signboard.png */; };
@@ -25,7 +25,7 @@
 		FEEFF48C1E1B90B2006C16F5 /* NGTProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NGTProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEEFF48F1E1B90B2006C16F5 /* NGTProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGTProgressView.h; sourceTree = "<group>"; };
 		FEEFF4901E1B90B2006C16F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FEEFF4991E1B9A93006C16F5 /* NGTCityRefreshControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NGTCityRefreshControl.xib; sourceTree = "<group>"; };
+		FEEFF4991E1B9A93006C16F5 /* NGTProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NGTProgressView.xib; sourceTree = "<group>"; };
 		FEEFF49E1E1B9B58006C16F5 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
 		FEEFF4A01E1B9B69006C16F5 /* city.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city.png; sourceTree = "<group>"; };
 		FEEFF4A21E1B9B71006C16F5 /* signboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signboard.png; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		FEEFF4971E1B9A55006C16F5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FEEFF4991E1B9A93006C16F5 /* NGTCityRefreshControl.xib */,
+				FEEFF4991E1B9A93006C16F5 /* NGTProgressView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 				FEEFF49F1E1B9B58006C16F5 /* car.png in Resources */,
 				FEEFF4A31E1B9B71006C16F5 /* signboard.png in Resources */,
 				FEEFF4A51E1B9B7A006C16F5 /* sun.png in Resources */,
-				FEEFF49A1E1B9A93006C16F5 /* NGTCityRefreshControl.xib in Resources */,
+				FEEFF49A1E1B9A93006C16F5 /* NGTProgressView.xib in Resources */,
 				FEEFF4A11E1B9B69006C16F5 /* city.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

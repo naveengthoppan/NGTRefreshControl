@@ -18,7 +18,7 @@ public class NGTProgressView: UIView {
     
     var isCompleted: Bool!
         
-        override init(frame: CGRect) {
+        override public init(frame: CGRect) {
             super.init(frame: frame)
             nibSetup()
         }
