@@ -9,10 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NGTCityRefreshControl" customModule="NGTProgressView" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NGTProgressView" customModule="NGTProgressView" customModuleProvider="target">
             <connections>
                 <outlet property="carImageView" destination="sBH-4V-of5" id="zQ8-n7-C7x"/>
+                <outlet property="carLeadingConstraint" destination="LeU-iP-XTr" id="98h-0T-D2l"/>
                 <outlet property="cityImageView" destination="JP7-4F-68I" id="y5E-Zx-5dN"/>
+                <outlet property="cityLeadingConstriant" destination="8Db-af-vwg" id="MjW-F6-jm3"/>
                 <outlet property="signBoardImageView" destination="iBw-tj-zp2" id="GzN-Zo-Td9"/>
                 <outlet property="sunImageView" destination="BIn-5m-asl" id="R0D-Tz-peA"/>
                 <outlet property="view" destination="qv9-k9-4pZ" id="Fe7-gX-fyz"/>
